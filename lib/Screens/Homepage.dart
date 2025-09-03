@@ -1,0 +1,83 @@
+import 'package:flutter/material.dart';
+import 'package:novox_flipkart/widgets/CircleAvatar.dart';
+import 'package:novox_flipkart/widgets/Searchbar.dart';
+import 'package:novox_flipkart/widgets/bottom_navigationbar.dart';
+import 'package:novox_flipkart/widgets/containers.dart';
+import 'package:novox_flipkart/widgets/toggle_switch.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+      body: Column(
+        children: [
+          const StaticContainers(), 
+          // const SizedBox(height: 10,),
+           Row(
+            children: [
+              // toggleswitchh(),
+              SizedBox(width: 8,),
+              Container(
+                width: 270,
+                child: SearchBarr(), 
+              ),
+            ],
+          ),
+          Image.asset("assets/locker.png"), 
+          const SizedBox(height: 10,), 
+          const SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              // mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                SizedBox(width: 15,),
+                CircleAvatarr(text: "EMI",),
+                SizedBox(width: 15,),
+                CircleAvatarr(text: "Group Buy",),
+                SizedBox(width: 15,),
+                CircleAvatarr(text: "FireDrops",),
+                SizedBox(width: 15,),
+                CircleAvatarr(text: "camera",),
+                SizedBox(width: 15,),
+                CircleAvatarr(text: "Seller",),
+                SizedBox(width: 15,),
+                
+              ],
+            ), 
+            ),
+            // SizedBox(height: 10,),
+             Padding(
+              padding: EdgeInsets.all(13.0),
+              child: Row(
+                children: [
+                  SecondContainerss(),
+                  SecondContainerss(),
+                  SecondContainerss(),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Align(alignment:Alignment.topLeft,child:Text("Recent Viewed Srores",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)),
+            ),
+            Row(
+              children: [
+                SecondContainerss(),
+                SecondContainerss(),
+                SecondContainerss(),
+              ],
+            ),
+        ],
+      ),
+      bottomNavigationBar: const BottomNavBarPage(),
+      
+    );
+  }
+}
