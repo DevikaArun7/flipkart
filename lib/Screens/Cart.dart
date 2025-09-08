@@ -71,7 +71,7 @@ class _MyCartState extends State<MyCart> {
     ),
   ],
 ),
-bottomNavigationBar: BottomNavBarPage(),
+// bottomNavigationBar: BottomNavBarPage(),
   ),
 );
   }

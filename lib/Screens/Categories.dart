@@ -23,24 +23,26 @@ class _CategoriessState extends State<Categoriess> {
           ],)
         ],
       ),
-      body: const Column(
-        children: [
-          CircleContainers(),
-          // Text("data"),
-          CircleContainers(),
-          CircleContainers(),
-          CircleContainers(),
-          SizedBox(height: 10,),
-          Row(
-            children: [
-              Text("More on Flipkart",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-              Divider(thickness: 3 ,color:Colors.black,)
-            ],
-          ),
-          CircleContainers(),
-        ],
+      body: SingleChildScrollView(
+        child: const Column(
+          children: [
+            CircleContainers(),
+            // Text("data"),
+            CircleContainers(),
+            CircleContainers(),
+            CircleContainers(),
+            SizedBox(height: 10,),
+            Row(
+              children: [
+                Text("More on Flipkart",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                Divider(thickness: 3 ,color:Colors.black,)
+              ],
+            ),
+            CircleContainers(),
+          ],
+        ),
       ),
-      bottomNavigationBar: BottomNavBarPage(),
+      // bottomNavigationBar: BottomNavBarPage(),
     );
   }
 }

@@ -99,7 +99,7 @@ class _AccountPageState extends State<AccountPage> {
            )
           ],
         ),
-        bottomNavigationBar: const BottomNavBarPage(),
+        // bottomNavigationBar: const BottomNavBarPage(),
       ),
     );
   }

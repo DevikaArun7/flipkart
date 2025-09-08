@@ -51,7 +51,7 @@ class _NotificationPageState extends State<NotificationPage> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavBarPage(),
+      // bottomNavigationBar: BottomNavBarPage(),
     );
   }
 }

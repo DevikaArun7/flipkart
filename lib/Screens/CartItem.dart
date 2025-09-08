@@ -62,7 +62,7 @@ class _CartItemState extends State<CartItem> {
     ),
   ],
 ),
-bottomNavigationBar: BottomNavBarPage(),
+// bottomNavigationBar: BottomNavBarPage(),
   ),
 );
   }
