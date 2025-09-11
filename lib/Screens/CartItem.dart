@@ -30,6 +30,7 @@ class _CartItemState extends State<CartItem> {
     ),
     body:TabBarView(
   children: [
+    Stack(children: [
     SingleChildScrollView(
       child: Column(
         children: [
@@ -93,10 +94,12 @@ class _CartItemState extends State<CartItem> {
             ],
           ),
         ),
-         
+
           ],
       ),
-    ),
+    ),          Align(alignment: Alignment.bottomCenter,child: ElevatedButton(onPressed: (){}, child: Text("Place order",style: TextStyle(color: Colors.black),),style:ElevatedButton.styleFrom(backgroundColor: Color.fromRGBO(246, 203, 12, 1)),))
+    ],),
+
   //  Container(height: 100, 
   //   width: 100, 
   //   color: Colors.amber,

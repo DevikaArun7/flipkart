@@ -61,7 +61,6 @@ class MyCartSecContainer extends StatelessWidget {
                       child: Text("    499",style: TextStyle(fontWeight: FontWeight.bold),),
                     ),
                     SizedBox(width: 180,),
-                    ElevatedButton(onPressed: (){}, child: Text("Place order",style: TextStyle(color: Colors.black),),style:ElevatedButton.styleFrom(backgroundColor: Color.fromRGBO(246, 203, 12, 1)),)
                   ],
                 )
               ],
