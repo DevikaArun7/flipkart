@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:novox_flipkart/Screens/Account.dart';
 import 'package:novox_flipkart/Screens/Cart.dart';
+import 'package:novox_flipkart/Screens/CartItem.dart';
 import 'package:novox_flipkart/Screens/Categories.dart';
 import 'package:novox_flipkart/Screens/Notifications.dart';
 import 'package:novox_flipkart/Screens/homepage.dart';
@@ -19,7 +20,7 @@ class _BottomNavBarPageState extends State<BottomNavBarPage> {
     Categoriess(),
     NotificationPage(), 
     AccountPage(), 
-    MyCart(),
+    CartItem()
   ];
   @override
   Widget build(BuildContext context) {

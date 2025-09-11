@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:novox_flipkart/widgets/CircleAvatar.dart';
-import 'package:novox_flipkart/widgets/Searchbar.dart';
-import 'package:novox_flipkart/widgets/bottom_navigationbar.dart';
-import 'package:novox_flipkart/widgets/containers.dart';
-import 'package:novox_flipkart/widgets/slider.dart';
-import 'package:novox_flipkart/widgets/toggle_switch.dart';
+import 'package:novox_flipkart/utils/toggle_switch.dart';
+import 'package:novox_flipkart/widgets/HomePage/CircleAvatar.dart';
+import 'package:novox_flipkart/widgets/HomePage/Containers.dart';
+import 'package:novox_flipkart/widgets/HomePage/Searchbar.dart';
+import 'package:novox_flipkart/widgets/HomePage/slider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -61,6 +60,7 @@ class _HomePageState extends State<HomePage> {
                Padding(
                 padding: EdgeInsets.all(13.0),
                 child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
                       SecondContainerss(),
@@ -75,6 +75,7 @@ class _HomePageState extends State<HomePage> {
                 child: Align(alignment:Alignment.topLeft,child:Text("Recent Viewed Srores",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)),
               ),
               SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
                     SecondContainerss(),

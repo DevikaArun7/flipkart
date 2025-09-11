@@ -15,7 +15,7 @@ class CircleAvatarr extends StatelessWidget {
         CircleAvatar(
           radius: 25,
           backgroundColor: Colors.grey.shade300, 
-          backgroundImage: AssetImage("assets/image 4.png"),
+          backgroundImage: AssetImage("assets/images/image 4.png"),
         ),
         SizedBox(height: 10,),
         Text(text)

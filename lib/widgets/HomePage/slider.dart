@@ -12,9 +12,9 @@ class SliderPage extends StatefulWidget {
 class _SliderPageState extends State<SliderPage> {
 
   final myItems = [
-    Image.asset("assets/locker.png"),
-    Image.asset("assets/locker.png"),
-    Image.asset("assets/locker.png"),
+    Image.asset("assets/images/locker.png"),
+    Image.asset("assets/images/locker.png"),
+    Image.asset("assets/images/locker.png"),
   ];
 
   int myCurrentIndex = 0;
