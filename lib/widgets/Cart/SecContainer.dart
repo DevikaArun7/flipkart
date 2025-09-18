@@ -58,7 +58,7 @@ class MyCartSecContainer extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(15.0),
-                      child: Text("    499",style: TextStyle(fontWeight: FontWeight.bold),),
+                      child: Text("    ₹499",style: TextStyle(fontWeight: FontWeight.bold),),
                     ),
                     SizedBox(width: 180,),
                   ],

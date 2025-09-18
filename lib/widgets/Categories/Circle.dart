@@ -12,7 +12,11 @@ class CircleContainers extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 120,
-      child: ListView.builder(
+      child: ListView.separated(separatorBuilder: (context, index) {
+        return 
+        SizedBox(width: 10,);
+        
+      },
         itemCount: 4,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
@@ -28,11 +32,13 @@ class CircleContainers extends StatelessWidget {
                   color: Colors.grey[300],
                 ),
                 child: Align(
-                  alignment: Alignment.centerLeft, // ⬅️ Image on the left side
+                  alignment: Alignment.centerLeft,
                   child: SizedBox(
                     width: 70,
                     height: 30,
-                    child: Image.asset(
+                    child:
+                    // NetworkImage("")
+                     Image.asset(
                       "assets/images/image 28.png",
                       fit: BoxFit.contain,
                     ),
@@ -47,3 +53,25 @@ class CircleContainers extends StatelessWidget {
     );
   }
 }
+
+// import 'package:flutter/material.dart';
+
+// class CategoryCircle extends StatelessWidget {
+//   const CategoryCircle({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return GridView.builder(
+//       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+//         crossAxisCount: 5, 
+//         crossAxisSpacing: 10, 
+//         mainAxisSpacing: 10, 
+//         childAspectRatio: 1,
+//         ),
+//          itemBuilder: (context, index) {
+//            return Container(
+//             decoration: BoxDecoration(color: Colors.blue),
+//            );
+//          },);
+//   }
+// }

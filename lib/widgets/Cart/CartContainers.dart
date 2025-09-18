@@ -50,7 +50,7 @@ class MyCartFirst extends StatelessWidget {
                   children: [
                     Text("16% off",style: TextStyle(color: Colors.green,fontSize: 18,fontWeight: FontWeight.bold),),
                     SizedBox(width: 10,),
-                    Text("499",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
+                    Text("₹499",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
                   ],
                 ),
                 SizedBox(height: 8,),
@@ -76,7 +76,9 @@ class CartContainers extends StatelessWidget {
       child: Card(
         elevation: 3,
         color: Colors.grey[100],
-        child: Image.asset("assets/images/card-1.png",fit: BoxFit.contain,height: 40,)
+        child: ClipRRect(
+          child: Image.asset("assets/images/card-1.png",
+                            fit: BoxFit.contain,height: double.infinity,width: double.infinity,))
       ),
       
     );

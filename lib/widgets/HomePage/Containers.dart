@@ -57,7 +57,24 @@ class SecondContainerss extends StatelessWidget {
       child: Card(
         elevation: 3,
         color: Colors.grey[100],
-        child: Image.asset("assets/images/card-1.png",fit: BoxFit.cover,),
+        child: Image.asset("assets/images/card-1.png",height: 20,),
+      ),
+    );
+  }
+}
+
+class RecentViewContainer extends StatelessWidget {
+  const RecentViewContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 150, 
+      width: 120,
+      child: Card(
+        elevation: 3,
+        color: Colors.grey[100],
+        child: Image.asset("assets/images/card-1.png",height: 40,),
       ),
     );
   }

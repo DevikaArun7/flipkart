@@ -23,9 +23,10 @@ class _CategoriessState extends State<Categoriess> {
           ],)
         ],
       ),
-      body: const SingleChildScrollView(
+      body:  SingleChildScrollView(
         child:  Column(
           children: [
+            // CategoryCircle(),
             CircleContainers(text: "data",),
             Divider(),
             CircleContainers(text: "data",),
