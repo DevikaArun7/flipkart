@@ -16,33 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  @override
-  Future<AmazonProducts?> fetchProductDetails() async {
-  final url = Uri.parse(
-    'https://real-time-amazon-data.p.rapidapi.com/product-details?asin=B07ZPKBL9V&country=US',
-  );
 
-  final response = await http.get(
-    url,
-    headers: {
-      'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com',
-      'x-rapidapi-key': 'fa1e134807msh7db3c185f348abbp166e6cjsn96c33a712066',
-    },
-  );
-if (response.statusCode == 200) {
-    final data = json.decode(response.body);
-    print(data);
-    return AmazonProducts.fromJson(data['data']); // 👈 adjust to match your API
-  } else {
-    print('❌ Failed: ${response.statusCode}');
-    return null;
-  }
-}
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    fetchProductDetails();
-  }
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
